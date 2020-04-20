@@ -15,6 +15,9 @@
 		6019990A244D4C3A001A20F4 /* ToDoListMySQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60199909244D4C3A001A20F4 /* ToDoListMySQLTests.swift */; };
 		60199915244D575D001A20F4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60199914244D575D001A20F4 /* RegisterViewController.swift */; };
 		60199919244D5FD8001A20F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60199918244D5FD8001A20F4 /* HomeViewController.swift */; };
+		60199924244D87BE001A20F4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60199923244D87BE001A20F4 /* Task.swift */; };
+		60199926244D8820001A20F4 /* TaskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60199925244D8820001A20F4 /* TaskAPI.swift */; };
+		60199928244D9E12001A20F4 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60199927244D9E12001A20F4 /* TaskTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		6019990B244D4C3A001A20F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60199914244D575D001A20F4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		60199918244D5FD8001A20F4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		60199923244D87BE001A20F4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		60199925244D8820001A20F4 /* TaskAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAPI.swift; sourceTree = "<group>"; };
+		60199927244D9E12001A20F4 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskTableViewCell.swift; path = "New Group/TaskTableViewCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,12 @@
 		601998F0244D4C39001A20F4 /* ToDoListMySQL */ = {
 			isa = PBXGroup;
 			children = (
+				60199920244D7EC1001A20F4 /* Model */,
 				601998F1244D4C39001A20F4 /* AppDelegate.swift */,
 				601998F3244D4C39001A20F4 /* LoginViewController.swift */,
 				60199914244D575D001A20F4 /* RegisterViewController.swift */,
 				60199918244D5FD8001A20F4 /* HomeViewController.swift */,
+				60199927244D9E12001A20F4 /* TaskTableViewCell.swift */,
 				601998FB244D4C3A001A20F4 /* Assets.xcassets */,
 				601998FD244D4C3A001A20F4 /* LaunchScreen.storyboard */,
 				60199900244D4C3A001A20F4 /* Info.plist */,
@@ -100,6 +108,15 @@
 				6019990B244D4C3A001A20F4 /* Info.plist */,
 			);
 			path = ToDoListMySQLTests;
+			sourceTree = "<group>";
+		};
+		60199920244D7EC1001A20F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60199923244D87BE001A20F4 /* Task.swift */,
+				60199925244D8820001A20F4 /* TaskAPI.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,10 +219,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60199928244D9E12001A20F4 /* TaskTableViewCell.swift in Sources */,
 				60199919244D5FD8001A20F4 /* HomeViewController.swift in Sources */,
 				601998F4244D4C39001A20F4 /* LoginViewController.swift in Sources */,
 				601998FA244D4C39001A20F4 /* ToDoListMySQL.xcdatamodeld in Sources */,
 				601998F2244D4C39001A20F4 /* AppDelegate.swift in Sources */,
+				60199924244D87BE001A20F4 /* Task.swift in Sources */,
+				60199926244D8820001A20F4 /* TaskAPI.swift in Sources */,
 				60199915244D575D001A20F4 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
