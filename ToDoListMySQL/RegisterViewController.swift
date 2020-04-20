@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  ToDoListMySQL
 //
 //  Created by Iskandar Herputra Wahidiyat on 20/04/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     //MARK: PROPERTIES
     let stackView = UIStackView()
@@ -17,8 +17,8 @@ class LoginViewController: UIViewController {
     let emailTextField = UITextField()
     let passwordLabel = UILabel()
     let passwordTextField = UITextField()
-    let loginButton = UIButton(type: .system)
-    let changeToRegisterPageButton = UIButton()
+    let registerButton = UIButton(type: .system)
+    let changeToLoginPageButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +30,12 @@ class LoginViewController: UIViewController {
         setupEmailTextField()
         setupPasswordLabel()
         setupPasswordTextField()
-        setupLoginButton()
-        setupChangeToRegisterPageButton()
+        setupRegisterButton()
+        setupChangeToLoginPageButton()
         
         setupStackView()
     }
-
+    
     //MARK: SETUP UI
     func setupStackView() {
         view.addSubview(stackView)
@@ -48,8 +48,8 @@ class LoginViewController: UIViewController {
         stackView.addArrangedSubview(emailTextField)
         stackView.addArrangedSubview(passwordLabel)
         stackView.addArrangedSubview(passwordTextField)
-        stackView.addArrangedSubview(loginButton)
-        stackView.addArrangedSubview(changeToRegisterPageButton)
+        stackView.addArrangedSubview(registerButton)
+        stackView.addArrangedSubview(changeToLoginPageButton)
         
         setStackViewConstraints()
     }
@@ -57,7 +57,7 @@ class LoginViewController: UIViewController {
     func setupAppNameLabel() {
         view.addSubview(appNameLabel)
         
-        appNameLabel.text = "Login Page"
+        appNameLabel.text = "Register Page"
         appNameLabel.textAlignment = .center
     }
     
@@ -85,19 +85,19 @@ class LoginViewController: UIViewController {
         passwordTextField.borderStyle = .line
     }
     
-    func setupLoginButton() {
-        view.addSubview(loginButton)
+    func setupRegisterButton() {
+        view.addSubview(registerButton)
         
-        loginButton.setTitle("Login", for: .normal)
-        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        registerButton.setTitle("Register", for: .normal)
+        registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
     }
     
-    func setupChangeToRegisterPageButton() {
-        view.addSubview(changeToRegisterPageButton)
+    func setupChangeToLoginPageButton() {
+        view.addSubview(changeToLoginPageButton)
         
-        changeToRegisterPageButton.setTitle("Create New Account", for: .normal)
-        changeToRegisterPageButton.setTitleColor(.black, for: .normal)
-        changeToRegisterPageButton.addTarget(self, action: #selector(changeToRegisterPageButtonTapped), for: .touchUpInside)
+        changeToLoginPageButton.setTitle("Already have an account? Login", for: .normal)
+        changeToLoginPageButton.setTitleColor(.black, for: .normal)
+        changeToLoginPageButton.addTarget(self, action: #selector(changeToLoginPageButtonTapped), for: .touchUpInside)
     }
     
     //MARK: SET CONSTRAINTS
@@ -107,15 +107,15 @@ class LoginViewController: UIViewController {
         stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
     }
-    
-    //MARK: ACTIONS
-    @objc func loginButtonTapped(sender: UIButton!) {
-        print("Login button tapped")
-    }
-    
-    @objc func changeToRegisterPageButtonTapped(sender: UIButton!) {
-        let registerViewController = RegisterViewController()
-         navigationController?.setViewControllers([registerViewController], animated: true)
-    }
-}
 
+    //MARK: ACTIONS
+    @objc func registerButtonTapped(sender: UIButton!) {
+        print("Register button tapped")
+    }
+    
+    @objc func changeToLoginPageButtonTapped(sender: UIButton!) {
+        let loginViewController = LoginViewController()
+        navigationController?.setViewControllers([loginViewController], animated: true)
+    }
+
+}
