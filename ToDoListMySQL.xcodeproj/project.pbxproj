@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		601998F2244D4C39001A20F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601998F1244D4C39001A20F4 /* AppDelegate.swift */; };
+		601998F4244D4C39001A20F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601998F3244D4C39001A20F4 /* ViewController.swift */; };
+		601998F7244D4C39001A20F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601998F5244D4C39001A20F4 /* Main.storyboard */; };
+		601998FA244D4C39001A20F4 /* ToDoListMySQL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 601998F8244D4C39001A20F4 /* ToDoListMySQL.xcdatamodeld */; };
+		601998FC244D4C3A001A20F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601998FB244D4C3A001A20F4 /* Assets.xcassets */; };
+		601998FF244D4C3A001A20F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601998FD244D4C3A001A20F4 /* LaunchScreen.storyboard */; };
+		6019990A244D4C3A001A20F4 /* ToDoListMySQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60199909244D4C3A001A20F4 /* ToDoListMySQLTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60199906244D4C3A001A20F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601998E6244D4C39001A20F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 601998ED244D4C39001A20F4;
+			remoteInfo = ToDoListMySQL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		601998EE244D4C39001A20F4 /* ToDoListMySQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListMySQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		601998F1244D4C39001A20F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		601998F3244D4C39001A20F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		601998F6244D4C39001A20F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		601998F9244D4C39001A20F4 /* ToDoListMySQL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListMySQL.xcdatamodel; sourceTree = "<group>"; };
+		601998FB244D4C3A001A20F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		601998FE244D4C3A001A20F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60199900244D4C3A001A20F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60199905244D4C3A001A20F4 /* ToDoListMySQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListMySQLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60199909244D4C3A001A20F4 /* ToDoListMySQLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListMySQLTests.swift; sourceTree = "<group>"; };
+		6019990B244D4C3A001A20F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		601998EB244D4C39001A20F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60199902244D4C3A001A20F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		601998E5244D4C39001A20F4 = {
+			isa = PBXGroup;
+			children = (
+				601998F0244D4C39001A20F4 /* ToDoListMySQL */,
+				60199908244D4C3A001A20F4 /* ToDoListMySQLTests */,
+				601998EF244D4C39001A20F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		601998EF244D4C39001A20F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				601998EE244D4C39001A20F4 /* ToDoListMySQL.app */,
+				60199905244D4C3A001A20F4 /* ToDoListMySQLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		601998F0244D4C39001A20F4 /* ToDoListMySQL */ = {
+			isa = PBXGroup;
+			children = (
+				601998F1244D4C39001A20F4 /* AppDelegate.swift */,
+				601998F3244D4C39001A20F4 /* ViewController.swift */,
+				601998F5244D4C39001A20F4 /* Main.storyboard */,
+				601998FB244D4C3A001A20F4 /* Assets.xcassets */,
+				601998FD244D4C3A001A20F4 /* LaunchScreen.storyboard */,
+				60199900244D4C3A001A20F4 /* Info.plist */,
+				601998F8244D4C39001A20F4 /* ToDoListMySQL.xcdatamodeld */,
+			);
+			path = ToDoListMySQL;
+			sourceTree = "<group>";
+		};
+		60199908244D4C3A001A20F4 /* ToDoListMySQLTests */ = {
+			isa = PBXGroup;
+			children = (
+				60199909244D4C3A001A20F4 /* ToDoListMySQLTests.swift */,
+				6019990B244D4C3A001A20F4 /* Info.plist */,
+			);
+			path = ToDoListMySQLTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		601998ED244D4C39001A20F4 /* ToDoListMySQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6019990E244D4C3A001A20F4 /* Build configuration list for PBXNativeTarget "ToDoListMySQL" */;
+			buildPhases = (
+				601998EA244D4C39001A20F4 /* Sources */,
+				601998EB244D4C39001A20F4 /* Frameworks */,
+				601998EC244D4C39001A20F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToDoListMySQL;
+			productName = ToDoListMySQL;
+			productReference = 601998EE244D4C39001A20F4 /* ToDoListMySQL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60199904244D4C3A001A20F4 /* ToDoListMySQLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60199911244D4C3A001A20F4 /* Build configuration list for PBXNativeTarget "ToDoListMySQLTests" */;
+			buildPhases = (
+				60199901244D4C3A001A20F4 /* Sources */,
+				60199902244D4C3A001A20F4 /* Frameworks */,
+				60199903244D4C3A001A20F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60199907244D4C3A001A20F4 /* PBXTargetDependency */,
+			);
+			name = ToDoListMySQLTests;
+			productName = ToDoListMySQLTests;
+			productReference = 60199905244D4C3A001A20F4 /* ToDoListMySQLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		601998E6244D4C39001A20F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Iskandar Herputra Wahidiyat";
+				TargetAttributes = {
+					601998ED244D4C39001A20F4 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					60199904244D4C3A001A20F4 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 601998ED244D4C39001A20F4;
+					};
+				};
+			};
+			buildConfigurationList = 601998E9244D4C39001A20F4 /* Build configuration list for PBXProject "ToDoListMySQL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 601998E5244D4C39001A20F4;
+			productRefGroup = 601998EF244D4C39001A20F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				601998ED244D4C39001A20F4 /* ToDoListMySQL */,
+				60199904244D4C3A001A20F4 /* ToDoListMySQLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		601998EC244D4C39001A20F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601998FF244D4C3A001A20F4 /* LaunchScreen.storyboard in Resources */,
+				601998FC244D4C3A001A20F4 /* Assets.xcassets in Resources */,
+				601998F7244D4C39001A20F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60199903244D4C3A001A20F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601998EA244D4C39001A20F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601998F4244D4C39001A20F4 /* ViewController.swift in Sources */,
+				601998FA244D4C39001A20F4 /* ToDoListMySQL.xcdatamodeld in Sources */,
+				601998F2244D4C39001A20F4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60199901244D4C3A001A20F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6019990A244D4C3A001A20F4 /* ToDoListMySQLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60199907244D4C3A001A20F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 601998ED244D4C39001A20F4 /* ToDoListMySQL */;
+			targetProxy = 60199906244D4C3A001A20F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		601998F5244D4C39001A20F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601998F6244D4C39001A20F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		601998FD244D4C3A001A20F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601998FE244D4C3A001A20F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6019990C244D4C3A001A20F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6019990D244D4C3A001A20F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6019990F244D4C3A001A20F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT88Q2XM7;
+				INFOPLIST_FILE = ToDoListMySQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListMySQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60199910244D4C3A001A20F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT88Q2XM7;
+				INFOPLIST_FILE = ToDoListMySQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListMySQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60199912244D4C3A001A20F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT88Q2XM7;
+				INFOPLIST_FILE = ToDoListMySQLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListMySQLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDoListMySQL.app/ToDoListMySQL";
+			};
+			name = Debug;
+		};
+		60199913244D4C3A001A20F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT88Q2XM7;
+				INFOPLIST_FILE = ToDoListMySQLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListMySQLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDoListMySQL.app/ToDoListMySQL";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		601998E9244D4C39001A20F4 /* Build configuration list for PBXProject "ToDoListMySQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6019990C244D4C3A001A20F4 /* Debug */,
+				6019990D244D4C3A001A20F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6019990E244D4C3A001A20F4 /* Build configuration list for PBXNativeTarget "ToDoListMySQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6019990F244D4C3A001A20F4 /* Debug */,
+				60199910244D4C3A001A20F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60199911244D4C3A001A20F4 /* Build configuration list for PBXNativeTarget "ToDoListMySQLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60199912244D4C3A001A20F4 /* Debug */,
+				60199913244D4C3A001A20F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		601998F8244D4C39001A20F4 /* ToDoListMySQL.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				601998F9244D4C39001A20F4 /* ToDoListMySQL.xcdatamodel */,
+			);
+			currentVersion = 601998F9244D4C39001A20F4 /* ToDoListMySQL.xcdatamodel */;
+			path = ToDoListMySQL.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 601998E6244D4C39001A20F4 /* Project object */;
+}
