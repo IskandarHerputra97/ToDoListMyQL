@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		601998F2244D4C39001A20F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601998F1244D4C39001A20F4 /* AppDelegate.swift */; };
-		601998F4244D4C39001A20F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601998F3244D4C39001A20F4 /* ViewController.swift */; };
-		601998F7244D4C39001A20F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601998F5244D4C39001A20F4 /* Main.storyboard */; };
+		601998F4244D4C39001A20F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601998F3244D4C39001A20F4 /* LoginViewController.swift */; };
 		601998FA244D4C39001A20F4 /* ToDoListMySQL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 601998F8244D4C39001A20F4 /* ToDoListMySQL.xcdatamodeld */; };
 		601998FC244D4C3A001A20F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601998FB244D4C3A001A20F4 /* Assets.xcassets */; };
 		601998FF244D4C3A001A20F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601998FD244D4C3A001A20F4 /* LaunchScreen.storyboard */; };
@@ -29,8 +28,7 @@
 /* Begin PBXFileReference section */
 		601998EE244D4C39001A20F4 /* ToDoListMySQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListMySQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		601998F1244D4C39001A20F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		601998F3244D4C39001A20F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		601998F6244D4C39001A20F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		601998F3244D4C39001A20F4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		601998F9244D4C39001A20F4 /* ToDoListMySQL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListMySQL.xcdatamodel; sourceTree = "<group>"; };
 		601998FB244D4C3A001A20F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		601998FE244D4C3A001A20F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,8 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				601998F1244D4C39001A20F4 /* AppDelegate.swift */,
-				601998F3244D4C39001A20F4 /* ViewController.swift */,
-				601998F5244D4C39001A20F4 /* Main.storyboard */,
+				601998F3244D4C39001A20F4 /* LoginViewController.swift */,
 				601998FB244D4C3A001A20F4 /* Assets.xcassets */,
 				601998FD244D4C3A001A20F4 /* LaunchScreen.storyboard */,
 				60199900244D4C3A001A20F4 /* Info.plist */,
@@ -182,7 +179,6 @@
 			files = (
 				601998FF244D4C3A001A20F4 /* LaunchScreen.storyboard in Resources */,
 				601998FC244D4C3A001A20F4 /* Assets.xcassets in Resources */,
-				601998F7244D4C39001A20F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				601998F4244D4C39001A20F4 /* ViewController.swift in Sources */,
+				601998F4244D4C39001A20F4 /* LoginViewController.swift in Sources */,
 				601998FA244D4C39001A20F4 /* ToDoListMySQL.xcdatamodeld in Sources */,
 				601998F2244D4C39001A20F4 /* AppDelegate.swift in Sources */,
 			);
@@ -225,14 +221,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		601998F5244D4C39001A20F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				601998F6244D4C39001A20F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		601998FD244D4C3A001A20F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
