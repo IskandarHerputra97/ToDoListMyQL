@@ -28,6 +28,78 @@ class HomeViewController: UIViewController {
         setupStackView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        fetchTask()
+    }
+    
+    //MARK: NETWORK REQUEST
+    /*
+    func fetchTask() {
+        guard let url = URL(string: "http://localhost/ToDoList/get_task.php") else {return}
+        
+        let session = URLSession.shared
+        session.dataTask(with: url) { (data, response, error) in
+            if let response = response {
+                print(response)
+            }
+            
+            if let data = data {
+                print(data)
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+        }.resume()
+    }
+    
+    func postTask() {
+        let parameters = ["title": "Service mobil", "description": "Service mobil sedan"]
+        
+        guard let url = URL(string: "http://localhost/ToDoList/post_task.php") else {return}
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        //request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else {return}
+        request.httpBody = httpBody
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            if let response = response {
+                print(response)
+            }
+            
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+        }.resume()
+    }
+    */
+    
+    func fetchTask() {
+        let url = "http://localhost/ToDoList/get_task.php"
+        let urlObj = URL(string: url)
+        
+        URLSession.shared.dataTask(with: urlObj!) {(data, response, error) in
+            do {
+                var taskList2 = try JSONDecoder().decode([Task2].self, from: data!)
+                
+                for i in taskList2 {
+                    print(i.id + " - " + i.title + " : " + i.description)
+                }
+            } catch {
+                print(error)
+            }
+        }.resume()
+    }
+    
     //MARK: SETUP UI
     func setupStackView() {
         view.addSubview(stackView)

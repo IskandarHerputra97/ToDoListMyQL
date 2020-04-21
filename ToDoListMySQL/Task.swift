@@ -8,8 +8,16 @@
 
 import Foundation
 
+
 struct Task {
     var id:Int?
     var taskTitle:String?
     var taskDescription:String?
+}
+
+
+struct Task2: Decodable {
+    let id: String
+    let title: String
+    let description: String
 }
