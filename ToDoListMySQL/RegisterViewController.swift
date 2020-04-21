@@ -34,6 +34,8 @@ class RegisterViewController: UIViewController {
         setupChangeToLoginPageButton()
         
         setupStackView()
+        
+        TaskAPI.getTask2()
     }
     
     //MARK: SETUP UI
@@ -109,7 +111,7 @@ class RegisterViewController: UIViewController {
     }
 
     //MARK: ACTIONS
-    @objc func registerButtonTapped(sender: UIButton!) {
+    @objc func registerButtonTapped(sender: UIButton!) {        
         let homeViewController = HomeViewController()
         navigationController?.setViewControllers([homeViewController], animated: true)
     }

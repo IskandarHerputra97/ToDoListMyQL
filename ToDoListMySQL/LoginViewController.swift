@@ -34,6 +34,8 @@ class LoginViewController: UIViewController {
         setupChangeToRegisterPageButton()
         
         setupStackView()
+        
+        TaskAPI.getTask2()
     }
 
     //MARK: SETUP UI

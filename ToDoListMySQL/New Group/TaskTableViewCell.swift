@@ -26,7 +26,7 @@ class TaskTableViewCell: UITableViewCell {
     }
     
     func set(task: Task) {
-        taskTitleLabel.text = task.taskTitle
+        taskTitleLabel.text = task.title
     }
     
     func configureTaskTitleLabel() {

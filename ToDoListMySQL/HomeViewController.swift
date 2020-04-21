@@ -13,7 +13,7 @@ var task:[Task] = []
 class HomeViewController: UIViewController {
 
     //MARK: PROPERTIES
-    let stackView = UIStackView()
+    var stackView = UIStackView()
     var taskTableView = UITableView()
     let signOutButton = UIButton()
     
@@ -21,14 +21,70 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Home Page"
         view.backgroundColor = .white
-        task = TaskAPI.getTask()
+
         // Do any additional setup after loading the view.
+        setupNavigationBarItem()
         setupTaskTableView()
         setupSignOutButton()
         setupStackView()
     }
     
+    //MARK: NETWORK REQUEST
+    /*
+    func fetchTask() {
+        guard let url = URL(string: "http://localhost/ToDoList/get_task.php") else {return}
+        
+        let session = URLSession.shared
+        session.dataTask(with: url) { (data, response, error) in
+            if let response = response {
+                print(response)
+            }
+            
+            if let data = data {
+                print(data)
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+        }.resume()
+    }
+    
+    func postTask() {
+        let parameters = ["title": "Service mobil", "description": "Service mobil sedan"]
+        
+        guard let url = URL(string: "http://localhost/ToDoList/post_task.php") else {return}
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        //request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else {return}
+        request.httpBody = httpBody
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            if let response = response {
+                print(response)
+            }
+            
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+        }.resume()
+    }
+    */
+    
     //MARK: SETUP UI
+    func setupNavigationBarItem() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNavigationBarItemTapped))
+    }
+    
     func setupStackView() {
         view.addSubview(stackView)
         
@@ -73,6 +129,11 @@ class HomeViewController: UIViewController {
         let loginViewController = LoginViewController()
         navigationController?.setViewControllers([loginViewController], animated: true)
     }
+    
+    @objc func addNavigationBarItemTapped() {
+        let addTaskViewController = AddTaskViewController()
+        navigationController?.pushViewController(addTaskViewController, animated: true)
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -86,5 +147,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.set(task: myTask)
        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let taskDetailViewController = TaskDetailViewController()
+       
+       taskDetailViewController.index = indexPath.row
+        navigationController?.pushViewController(taskDetailViewController, animated: true)
     }
 }
