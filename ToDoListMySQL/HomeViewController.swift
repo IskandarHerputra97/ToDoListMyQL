@@ -13,7 +13,7 @@ var task:[Task] = []
 class HomeViewController: UIViewController {
 
     //MARK: PROPERTIES
-    let stackView = UIStackView()
+    var stackView = UIStackView()
     var taskTableView = UITableView()
     let signOutButton = UIButton()
     
@@ -21,15 +21,12 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Home Page"
         view.backgroundColor = .white
-        task = TaskAPI.getTask()
+
         // Do any additional setup after loading the view.
+        setupNavigationBarItem()
         setupTaskTableView()
         setupSignOutButton()
         setupStackView()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        fetchTask()
     }
     
     //MARK: NETWORK REQUEST
@@ -83,24 +80,11 @@ class HomeViewController: UIViewController {
     }
     */
     
-    func fetchTask() {
-        let url = "http://localhost/ToDoList/get_task.php"
-        let urlObj = URL(string: url)
-        
-        URLSession.shared.dataTask(with: urlObj!) {(data, response, error) in
-            do {
-                var taskList2 = try JSONDecoder().decode([Task2].self, from: data!)
-                
-                for i in taskList2 {
-                    print(i.id + " - " + i.title + " : " + i.description)
-                }
-            } catch {
-                print(error)
-            }
-        }.resume()
+    //MARK: SETUP UI
+    func setupNavigationBarItem() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNavigationBarItemTapped))
     }
     
-    //MARK: SETUP UI
     func setupStackView() {
         view.addSubview(stackView)
         
@@ -145,6 +129,11 @@ class HomeViewController: UIViewController {
         let loginViewController = LoginViewController()
         navigationController?.setViewControllers([loginViewController], animated: true)
     }
+    
+    @objc func addNavigationBarItemTapped() {
+        let addTaskViewController = AddTaskViewController()
+        navigationController?.pushViewController(addTaskViewController, animated: true)
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -158,5 +147,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.set(task: myTask)
        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let taskDetailViewController = TaskDetailViewController()
+       
+       taskDetailViewController.index = indexPath.row
+        navigationController?.pushViewController(taskDetailViewController, animated: true)
     }
 }

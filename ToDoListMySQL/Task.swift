@@ -8,16 +8,8 @@
 
 import Foundation
 
-
-struct Task {
-    var id:Int?
-    var taskTitle:String?
-    var taskDescription:String?
-}
-
-
-struct Task2: Decodable {
-    let id: String
-    let title: String
-    let description: String
+struct Task: Decodable {
+    var id: String
+    var title: String
+    var description: String
 }

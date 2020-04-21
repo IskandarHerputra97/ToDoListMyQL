@@ -9,16 +9,23 @@
 import Foundation
 
 class TaskAPI {
-    static func getTask() -> [Task] {
-        let taskList = [
-            Task(id: 1, taskTitle: "Check Email", taskDescription: "Check google mail"),
-            Task(id: 2, taskTitle: "Ambil KTP", taskDescription: "Ambil KTP dari Kantor kelurahan"),
-            Task(id: 3, taskTitle: "Isi pulsa", taskDescription: "Isi pulsa bulanan"),
-            Task(id: 4, taskTitle: "Buat website", taskDescription: "Website portofolio"),
-            Task(id: 5, taskTitle: "Istirahat", taskDescription: "Istirahat 30 menit"),
-        ]
-        return taskList
+    static func getTask2() {
+        let url = "http://localhost/ToDoList/get_task.php"
+        let urlObj = URL(string: url)
+        
+        URLSession.shared.dataTask(with: urlObj!) {(data, response, error) in
+            do {
+                task = try JSONDecoder().decode([Task].self, from: data!)
+                
+                for i in task {
+                    //print(i.id + " - " + i.title + " : " + i.description)
+                    //print(taskList2)
+                    //print(i.title)
+                    //tempTaskList = [i]
+                }
+            } catch {
+                print(error)
+            }
+        }.resume()
     }
-    
-    private let taskList = TaskAPI.getTask()
 }
